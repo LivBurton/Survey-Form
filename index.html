@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Survey Form</title>
+</head>
+
+<body>
+	<h1 id=title>Student Survey Form</h1>
+	<p id=description>Thank you for taking part in our survey!</p>
+
+	<form id="survey-form">
+
+		<div>
+			<label id="name-label" for="name">Name</label>
+			<input class="form-style" type="text" name="name" id="name" placeholder="Enter your full name" required>
+		</div>
+
+		<div>
+			<label id="email-label" for="email">Email</label>
+			<input class="form-style" type="email" name="email" id="email" placeholder="Enter email address" required>
+		</div>
+
+		<div>
+			<label id="number-label" for="number">Age</label>
+			<input class="form-style" type="number" name="age" id="number" min="18" max="100" placeholder="Your age">
+		</div>
+
+		<div>
+			<p>How would you describe your activity level <em>before</em> you started Krav Maga classes?</p>
+			<select id="dropdown" name="activity-before" class="form-style" required>
+				<option disabled selected value>Select your reason</option>
+				<option value="low">Low</option>
+				<option value="moderate">Moderate</option>
+				<option value="high">High</option>
+			</select>
+		</div>
+
+		<div>
+			<p>Where did you first hear about us?</p>
+			<label>
+				<input name="hear" value="Facebook" type="radio" class="radio-button" checked />Facebook</label>
+			<label>
+				<input name="hear" value="Instagram" type="radio" class="radio-button" />Instagram</label>
+			<label>
+				<input name="hear" value="Search engine" type="radio" class="radio-button" />Search engine</label>
+			<label>
+				<input name="hear" value="From a friend" type="radio" class="radio-button" />From a friend</label>
+		</div>
+
+		<div>
+			<p>What was the <em>main</em> reason why you started Krav Maga classes?<span>(You can select more than one if you want!)</span></p>
+
+			<label><input name="reason" value="Increase my fitness" type="checkbox" class="input-checkbox" />Increase my fitness</label>
+			<label>
+				<input name="prefer" value="Learn to defend myself" type="checkbox" class="input-checkbox">Learn to defend myself</label>
+			<label><input name="prefer" value="Learn to defend others" type="checkbox" class="input-checkbox">Learn to defend others</label>
+			<label><input name="prefer" value="Meet new people" type="checkbox" class="input-checkbox" />Meet new people</label>
+			<label><input name="prefer" value="Increase my confidence" type="checkbox" class="input-checkbox">Increase my confidence</label>
+		</div>
+		<div>
+			<p>How would you describe your activity level now?
+			</p>
+			<select id="activity-now" name="activity-now" class="form-style" required>
+				<option disabled selected value>Select an option</option>
+				<option value="low">Low</option>
+				<option value="moderate">Moderate</option>
+				<option value="High">High</option>
+			</select>
+		</div>
+
+		<div>
+			<p>Are there any comments that you would like to add?</p>
+			<textarea id="comments" class="commentarea" name="comment" placeholder="Enter your extra comments here!"></textarea>
+		</div>
+<div>
+		<button type="submit" id="submit" class="submit">
+			Submit!
+		</button>
+		</div>
+
+	</form>
+
+
+
+</body>
+
+</html>

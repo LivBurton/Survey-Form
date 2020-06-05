@@ -1,0 +1,9 @@
+body {
+  background-image: url("KravBackground.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+	background-position: center;
+	min-height: 500px;
+	background-size: cover;
+	background-position: right top;
+}
