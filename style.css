@@ -12,7 +12,7 @@ body {
 
 .header {
 	background-color: hsl(165, 88%, 63%, 0.8);
-	width: 80%;
+	width: 55%;
 	margin: 0 auto;
 	border-radius: 36% 64% 34% 66% / 95% 1% 99% 5%;
 	border-color: hsl(270, 10%, 40%);
@@ -40,12 +40,16 @@ h1 {
 
 /* If the screen size is 601px wide or more */
 @media screen and (min-width: 601px) {
+	.header {
+		width: 55%;
+	}
+
 	h1 {
-		font-size: 50px;
+		font-size: 3.5vw;//was 50px
 	}
 
 	.pDescription {
-		font-size: 25px;
+		font-size: 1.8vw;//was 25px
 	}
 }
 
